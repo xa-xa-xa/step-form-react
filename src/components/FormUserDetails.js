@@ -39,7 +39,7 @@ export class FormUserDetails extends Component {
           <br />
           <RaisedButton
             label="continue"
-            primary="true"
+            primary
             style={styles.button}
             onClick={this.continue}
           />

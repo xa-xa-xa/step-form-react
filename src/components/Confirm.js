@@ -32,13 +32,12 @@ export class FormUserDetails extends Component {
           <br />
           <RaisedButton
             label="back"
-            primary="false"
+            primary
             style={styles.button}
             onClick={this.back}
           />
           <RaisedButton
             label="continue"
-            primary="true"
             style={styles.button}
             onClick={this.continue}
           />
