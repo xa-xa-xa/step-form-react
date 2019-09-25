@@ -19,30 +19,30 @@ export class FormUserDetails extends Component {
     } = this.props;
     return (
       <MuiThemeProvider>
-        <React.Fragment>
-          <AppBar title='Confirm Submission' />
+        <>
+          <AppBar title="Confirm Submission" />
           <List>
-            <ListItem primaryText='First Name' secondaryText={firstName} />
-            <ListItem primaryText='First Last' secondaryText={lastName} />
-            <ListItem primaryText='email' secondaryText={email} />
-            <ListItem primaryText='Occupation' secondaryText={occupation} />
-            <ListItem primaryText='City' secondaryText={city} />
-            <ListItem primaryText='Bio' secondaryText={bio} />
+            <ListItem primaryText="First Name" secondaryText={firstName} />
+            <ListItem primaryText="First Last" secondaryText={lastName} />
+            <ListItem primaryText="email" secondaryText={email} />
+            <ListItem primaryText="Occupation" secondaryText={occupation} />
+            <ListItem primaryText="City" secondaryText={city} />
+            <ListItem primaryText="Bio" secondaryText={bio} />
           </List>
           <br />
           <RaisedButton
-            label='back'
-            primary='false'
+            label="back"
+            primary="false"
             style={styles.button}
             onClick={this.back}
           />
           <RaisedButton
-            label='continue'
-            primary='true'
+            label="continue"
+            primary="true"
             style={styles.button}
             onClick={this.continue}
           />
-        </React.Fragment>
+        </>
       </MuiThemeProvider>
     );
   }

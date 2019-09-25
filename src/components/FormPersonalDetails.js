@@ -18,43 +18,43 @@ export class FormPersonalDetails extends Component {
     const { values, handleChange } = this.props;
     return (
       <MuiThemeProvider>
-        <React.Fragment>
-          <AppBar title='Enter Personal  Details' />
+        <>
+          <AppBar title="Enter Personal  Details" />
           <TextField
-            hintText='enter your occupation'
-            floatingLabelText='occupation'
+            hintText="enter your occupation"
+            floatingLabelText="occupation"
             onChange={handleChange('occupation')}
             defaultValue={values.occupation}
           />
           <br />
           <TextField
-            hintText='enter your city'
-            floatingLabelText='city'
+            hintText="enter your city"
+            floatingLabelText="city"
             onChange={handleChange('city')}
             defaultValue={values.city}
           />
           <br />
           <TextField
-            hintText='enter your bio'
-            floatingLabelText='bio'
+            hintText="enter your bio"
+            floatingLabelText="bio"
             onChange={handleChange('bio')}
             defaultValue={values.bio}
           />
           <br />
           <RaisedButton
-            label='back'
-            primary=''
+            label="back"
+            primary=""
             style={styles.button}
             onClick={this.back}
           />
 
           <RaisedButton
-            label='continue'
-            primary='true'
+            label="continue"
+            primary="true"
             style={styles.button}
             onClick={this.continue}
           />
-        </React.Fragment>
+        </>
       </MuiThemeProvider>
     );
   }

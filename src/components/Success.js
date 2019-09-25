@@ -14,23 +14,17 @@ export class Success extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <React.Fragment>
-          <AppBar title='Success' />
+        <>
+          <AppBar title="Success" />
           <h1>Thank you for your submission.</h1>
           <p>
             You will receive email with confirmation of your successful
             submission soon.
           </p>
-        </React.Fragment>
+        </>
       </MuiThemeProvider>
     );
   }
 }
-
-const styles = {
-  button: {
-    margin: 15
-  }
-};
 
 export default Success;
